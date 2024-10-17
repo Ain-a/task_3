@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="main.css">
+    <title>電卓</title>
+  </head>
+
+  <body>
+    <h3>電卓</h3>
+    <!-- 電卓全体 -->
+      <div class="calculator_area">
+    <!-- 電卓数値入力部分 -->
+      <div><button id="screen" onclick="clickbutton(this)">0</button></div>
+    <!-- 電卓ボタン -->
+     <table class="button_area" >
+    <!-- 1段目 -->
+      <tr>
+        <td><button class="button" onclick="clickbutton(this)">7</button></td>
+        <td><button class="button" onclick="clickbutton(this)">8</button></td>
+        <td><button class="button" onclick="clickbutton(this)">9</button></td>
+        <td><button class="button" onclick="clickbutton(this);click_bt_symb(this)" id="symb">/</button></td>
+      </tr>
+    <!-- 2段目 -->
+      <tr>
+        <td><button class="button" onclick="clickbutton(this)">4</button></td>
+        <td><button class="button" onclick="clickbutton(this)">5</button></td>
+        <td><button class="button" onclick="clickbutton(this)">6</button></td>
+        <td><button class="button" onclick="clickbutton(this);click_bt_symb(this)" id="symb">*</button></td>
+      </tr>
+    <!-- 3段目 -->
+      <tr>
+        <td><button class="button" onclick="clickbutton(this)">1</button></td>
+        <td><button class="button" onclick="clickbutton(this)">2</button></td>
+        <td><button class="button" onclick="clickbutton(this)">3</button></td>
+        <td><button class="button" onclick="clickbutton(this);click_bt_symb(this)" id="symb">-</button></td>
+      </tr>
+    <!-- 4段目 -->
+      <tr>
+        <td><button class="button" onclick="clickbutton(this)">0</button></td>
+        <td><button class="button" onclick="clickbutton(this)" id="zero">00</button></td>
+        <td><button class="button" onclick="clickbutton(this);click_bt_symb(this)" id="symb">.</button></td>
+        <td><button class="button" onclick="clickbutton(this);click_bt_symb(this)" id="symb">+</button></td>
+      </tr>
+    <!-- 6段目 -->
+      <tr>
+        <td colspan="3"><button class="ac_button" onclick="clickbutton(this)">AC</button></td>
+        <td><button class="button" onclick="clickbutton(this);click_bt_symb(this)" id="symb">=</button></td>
+      </tr>
+
+     </table>
+
+
+
+      
+    </div>
+        
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>

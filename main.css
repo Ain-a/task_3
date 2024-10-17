@@ -1,0 +1,51 @@
+/* 電卓全体 */
+.calculator_area {
+    background-color: white;
+    height: 600px;
+    width: 400px;
+    border: solid 3px #000000;
+    border-radius: 10px;
+}
+/* スクリーン部分 */
+#screen {
+    background-color: #eeeeee;
+    height: 100px;
+    width: 380px;
+    border: solid 3px #000000;
+    border-radius: 20px;
+    margin: 20px auto;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+/* キーボード土台 */
+.button_area {
+    /* background-color: paleturquoise; */
+    height: 430px;
+    width: 380px;
+    margin: 0 auto;
+    padding: 10px;
+    
+    border: solid 1px #dcdcdca4;
+    border-right: solid 4px #dcdcdca4;
+    border-left: solid 4px #dcdcdca4;
+    border-radius: 10px;
+
+    text-align: center;
+
+    table-layout: fixed;
+}
+/* ボタン部分 */
+button {
+    background-color: #ead9ff;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+}
+.ac_button {
+    width: 240px;
+}
